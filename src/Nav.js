@@ -4,10 +4,10 @@ import "./Nav.css"
 function Nav() {
     return (
         <div className="nav_contents">
-            <div className="nav">
+            <div className="nav nav_black">
                 <img 
                     className="nav_logo" 
-                    src="https://variety.com/wp-content/uploads/2020/05/netflix-logo.png?w=1024" 
+                    src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" 
                     alt="Netflix Logo" 
                 />
 
@@ -18,7 +18,6 @@ function Nav() {
                 />
             </div>
         </div>
-        
     )
     
 }
