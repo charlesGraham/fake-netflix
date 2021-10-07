@@ -1,9 +1,10 @@
 import React from "react";
 import "./HomeScreen.css";
+import Nav from "./Nav";
 
 function HomeScreen() {
     return <div className="homeScreen">
-        { /* nav */ }
+        <Nav />
 
         { /* banner */ }
 
@@ -11,4 +12,4 @@ function HomeScreen() {
     </div>
 }
 
-export default HomeScreen
+export default HomeScreen;
