@@ -1,6 +1,6 @@
 
 //typically would store in {process.env.API_KEY}
-const API_KEY="969daedb04110bc57d0630647efdad8a";
+const API_KEY="ab692577259cdd2f037258020f7348bb";
 
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&LANGUAGE=en-US`,
