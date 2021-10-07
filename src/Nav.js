@@ -19,8 +19,8 @@ function Nav() {
     }, [])
 
     return (
-        <div className="nav_contents">
-            <div className="nav nav_black">
+        <div className={`nav ${ show && 'nav_black'}`}>
+            <div className="nav_contents">
                 <img 
                     className="nav_logo" 
                     src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" 
