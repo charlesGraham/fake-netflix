@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Counter } from './features/counter/Counter';
 import './App.css';
-import HomeScreen from './HomeScreen';
+import HomeScreen from './screens/HomeScreen';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,7 +15,7 @@ function App() {
 
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <HomeScreen />
           </Route>
         </Switch>
