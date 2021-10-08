@@ -1,11 +1,34 @@
 
-import React from 'react';
+import axios from './axios';
+import React, { useEffect, useState } from 'react';
 import "./Row.css";
 
-function Row() {
+function Row({ title, fetchUrl, isLargeRow = false }) {
+    const [movies, setMovies] = useState([]);
+    const base_url = "https://image.tmdb.org/t/p/original/";
+
+    useEffect(() => {
+        async function fetchData() {
+            const request = await axios.get(fetchUrl);
+            setMovies(request.data.results);
+            return request;
+        }
+
+        fetchData();
+    }, [fetchUrl]);
+
+    // to make sure we're getting data from the request
+    console.log(movies);
+
     return (
         <div className="row">
-            <h2>This is a title</h2>
+            <h2>{title}</h2>
+
+            {movies && movies.map(movie => (
+                <img src={`${base_url}${
+                    isLargeRow? movie.poster_path :movie.backdrop_path
+                }`} alt={movie.name} />
+            ))}
         </div>
     )
 }
