@@ -1,3 +1,5 @@
+import { initializeApp } from "firebase/app";
+
 const firebaseConfig = {
     apiKey: "AIzaSyB0kw_PlGM1ioSqgp9sSZcvpEYCaUaRc6I",
     authDomain: "netflix-clone-45593.firebaseapp.com",
@@ -6,3 +8,5 @@ const firebaseConfig = {
     messagingSenderId: "929696350404",
     appId: "1:929696350404:web:4d452d1359562e1008c991"
   };
+
+  const app = initializeApp(firebaseConfig);
