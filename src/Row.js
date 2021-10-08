@@ -39,7 +39,6 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
                     )
                 ))}
             </div>
-            <h3>{movies.name}</h3>
         </div>
     );
 }
