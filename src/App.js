@@ -10,10 +10,11 @@ import {
 import LoginScreen from './screens/LoginScreen';
 import { auth } from "./firebase";
 import { useDispatch } from 'react-redux';
-import { login, logout } from './features/userSlice';
+import { login, logout, selectUser } from './features/userSlice';
+import { useSelector } from 'react-redux';
 
 function App() {
-  const user = null;
+  const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
   useEffect(() => {
