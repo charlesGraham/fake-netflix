@@ -62,3 +62,39 @@
     padding-bottom: 10px;
     color: #fff;
 }
+
+.profileScreen_planType {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.profileScreen_planInfo > h3 {
+    font-size: 14px;
+}
+
+.profileScreen_planInfo > p {
+    font-size: 12px;
+}
+
+.profileScreen_planType > button {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    min-width: 50px;
+}
+
+.notSubbed {
+    background-color: #e50914;
+}
+
+.subbed {
+    background-color: gray;
+}
+
+
+
+
+
+
