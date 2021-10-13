@@ -17,4 +17,4 @@ function PlanType(props) {
     )
 }
 
-export default PlanType
+export default PlanType;
